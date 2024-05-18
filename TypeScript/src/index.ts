@@ -1,12 +1,37 @@
-let id : string = 'hello';
 
-// id = 4
 
-console.log(id);
+// basic types
 
-let bodyT = document.getElementsByTagName('body');
+let num : number = 6;
+let myname: string = 'daniel';
 
-let div = document.createElement('div');
-div.innerHTML = "<strong>Typescript is great</strong>";
 
-document.body.appendChild(div);
+let o : any = 'hello';
+
+
+//Tuple types
+let student: [number, number,string] = [1,2,'dan']
+
+
+//union
+let uni: string | number = 'helloworld';
+
+//enums
+enum directions {
+    up ,dow, left,right
+}
+
+// objects
+
+type MyObject = {
+    name: string,
+    age: number,
+    position: number,
+}
+
+let obj: MyObject = {
+  name: 'Daniel',
+  age: 25,
+  position: 9,
+};
+
