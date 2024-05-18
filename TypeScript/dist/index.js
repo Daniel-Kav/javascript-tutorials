@@ -20,3 +20,22 @@ let obj = {
     age: 25,
     position: 9,
 };
+//Type assertions
+let numer = 2;
+// let numer2 = <string>numer;
+let numer2 = numer;
+//Functions
+function multiply(x, y) {
+    return x * y;
+}
+// console.log(multiply(2,9));
+//void type
+function log(message) {
+    console.log(message);
+}
+log(20);
+let obj1 = {
+    name: 'Daniel',
+    age: 24,
+    position: 9,
+};

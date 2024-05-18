@@ -21,6 +21,8 @@ enum directions {
     up ,dow, left,right
 }
 
+// console.log(directions.up)
+
 // objects
 
 type MyObject = {
@@ -35,3 +37,34 @@ let obj: MyObject = {
   position: 9,
 };
 
+//Type assertions
+let numer: any = 2
+// let numer2 = <string>numer;
+let numer2 = numer as number;
+
+//Functions
+function multiply(x: number, y: number): number {
+    return x * y;
+}
+
+// console.log(multiply(2,9));
+
+//void type
+function log(message: string | number ): void{
+    console.log(message);
+}
+
+log(20)
+
+//interfaces
+type MyInterface {
+    name: string,
+    age: number,
+    position: number,
+}
+
+let obj1: MyInterface = {
+  name: 'Daniel',
+  age: 24,
+  position: 9,
+};
