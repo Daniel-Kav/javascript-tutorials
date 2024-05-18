@@ -1,5 +1,5 @@
 let id : string = 'hello';
 
-id = 4
+// id = 4
 
 console.log(id);
