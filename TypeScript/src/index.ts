@@ -51,13 +51,13 @@ function multiply(x: number, y: number): number {
 
 //void type
 function log(message: string | number ): void{
-    console.log(message);
+    // console.log(message);
 }
 
 log(20)
 
 //interfaces
-type MyInterface {
+interface MyInterface  {
     name: string,
     age: number,
     position: number,
@@ -68,3 +68,29 @@ let obj1: MyInterface = {
   age: 24,
   position: 9,
 };
+
+
+//classes
+
+interface MyClassInterface {
+    id: number,
+    name: string,
+    register(): string
+}
+class MyClass implements MyClassInterface {
+    id: number
+    name: string
+
+    constructor(id: number, name: string){
+        this.id = id;
+        this.name = name;
+    }
+
+    register(){
+        return `${this.name} registered`
+    }
+
+}
+
+let dan = new MyClass(2,'daniel')
+console.log(dan.register())

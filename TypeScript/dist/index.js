@@ -31,7 +31,7 @@ function multiply(x, y) {
 // console.log(multiply(2,9));
 //void type
 function log(message) {
-    console.log(message);
+    // console.log(message);
 }
 log(20);
 let obj1 = {
@@ -39,3 +39,14 @@ let obj1 = {
     age: 24,
     position: 9,
 };
+class MyClass {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} registered`;
+    }
+}
+let dan = new MyClass(2, 'daniel');
+console.log(dan.register());
