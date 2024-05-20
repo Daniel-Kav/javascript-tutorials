@@ -96,3 +96,12 @@ let dan = new MyClass(2,'daniel')
 console.log(dan.register())
 alert(dan.register());
 
+//Generics
+function getArray<T>(items: T[]): T[] {
+    return new Array().concat(items)
+}
+
+let numArray = getArray<number>([1,2,3,4,])
+let stringArray = getArray(['key1', 'key2', 'key3', 'key4'])
+
+numArray.push()
