@@ -50,3 +50,4 @@ class MyClass {
 }
 let dan = new MyClass(2, 'daniel');
 console.log(dan.register());
+alert(dan.register());
