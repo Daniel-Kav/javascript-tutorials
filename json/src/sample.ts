@@ -1,4 +1,4 @@
- import { getName } from './sample'
+
 
 // basic types
 
@@ -100,6 +100,8 @@ alert(dan.register());
 function getArray<T>(items: T[]): T[] {
     return new Array().concat(items)
 }
+
+let newArray = getArray<string>(['jane ', 'dan', 'john',])
 
 let numArray = getArray<number>([1,2,3,4,])
 let stringArray = getArray(['key1', 'key2', 'key3', 'key4'])
