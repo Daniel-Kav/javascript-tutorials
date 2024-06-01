@@ -1,4 +1,13 @@
-function sum(a, b) {
-  return a + b;
+class Calculator{
+
+    add(a,b){
+        return a + b;
+    }
+    sub(a,b){
+        return a - b;
+    }
+    divide(a,b){
+        return a / b;
+    }
 }
-module.exports = sum;
+module.exports = Calculator;
